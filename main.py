@@ -13,8 +13,7 @@ class MyMCGame:
         self.players_dict = {}
 
     def init_network(self):
-        # self.game_client = GameClient("127.0.0.1", 12345)
-        self.game_client = GameClient("117.50.163.24", 12345)
+        self.game_client = GameClient("127.0.0.1", 12345)
         self.game_client.run()
         print("Registering player...")
         game_info = self.game_client.register_player() # 注册玩家,下载地图信息（方块和其他玩家）
